@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Mark Jayson Agao Portfolio</title>
+    <link rel="icon" type="image/x-icon"
+        href="Midterms 1 - Unit 4 Video/MJA logo@4x-8.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+        .navbar-brand {
+            font-size: 1.8rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar {
+            background-color: rgb(0, 0, 0);
+        }
+
+        .navbar-toggler-icon {
+            background-color: #007bff;
+            border-color: #ddd;
+            border-radius: 5px;
+            border-width: 5px;
+        }
+
+        .navbar-collapse.show .navbar-toggler-icon {
+            background-color: #635a5a;
+            border-color: #007bff;
+        }
+
+
+        #about {
+            background-color: #E9EDEE;
+        }
+
+        #projects {
+            background-image: linear-gradient(to bottom, rgba(85, 85, 85, 0), rgba(0, 0, 0, 0.901));
+            background-color: #f4f4f4;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .icon {
+            max-width: 55px;
+            height: auto;
+            margin: 0 0 0 30px;
+
+        }
+
+        .techstack {
+            max-width: 55px;
+            height: auto;
+            margin: 20px;
+
+        }
+
+
+        .nav-link {
+
+            margin-right: 3vw;
+            color: rgb(25, 128, 244);
+        }
+
+        .creation,
+        .intro {
+            font-family: Montserrat, sans-serif;
+
+        }
+
+        .creation {
+            font-weight: 900;
+            color: darkgray;
+        }
+
+
+        .intro {
+            font-size: 25px;
+        }
+
+        .main-text {
+            margin-top: 100px;
+            color: rgb(0, 0, 0);
+        }
+
+        .heading-text {
+            font-family: Montserrat, sans-serif;
+            color: #007bff;
+            padding-top: 30px;
+            font-size: 25px;
+            border-radius: 0 0 20px 20px;
+            padding-bottom: 30px;
+        }
+
+        .carousel-inner {
+            height: 700px;
+            padding: 10%;
+            display: flex;
+            margin-top: -90px;
+
+        }
+
+        /* Project Thumbnail */
+        .proj {
+            max-width: 600px;
+            border-radius: 30px;
+
+        }
+
+        .img-container {
+            padding-top: 150px;
+            max-width: 600px;
+            overflow: hidden;
+            max-height: 500px;
+            border-radius: 30px;
+            margin: auto
+        }
+        #project{
+            color: white;
+        }
+
+        .carousel-caption {
+            position: absolute;
+            top: -20px;
+            color: black;
+        }
+
+        a {
+            margin: auto;
+                        color: white;
+                    }
+                    .contact{
+                        font-family: Montserrat, sans-serif;
+                        font-size: 30px;
+                        color:#007bff;
+                    }   
+                    .contact-logo{
+                        max-width: 35px;
+                        height: auto;
+                        margin-right: 10px;
+                    }
+
+                    @media (max-width: 570px) {
+                        .nav-link {
+                            margin-left: 45%;
+                        }
+
+                        .main-text {
+                            margin-top: 30px;
+                            padding: 30px;
+                        }
+
+                        .proj {
+                            max-width: 400px;
+                            border-radius: 30px;
+                        }
+
+                        .carousel-inner {
+                            max-height: 600px;
+                            margin-top: 0px;
+                        }
+
+
+                    }
+                </style>
+            </head>
+
+            <body>
+
+                <nav class="navbar navbar-expand-sm navbar-light shadow">
+                    <a class="navbar-brand"> <img src="Activitiy 3-Portfolio/logo.png" class="techstack" alt="Logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center " id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item ">
+                                <a class="nav-link fs-5 my-20" href="#about">About Me</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link fs-5" href="#tech">Tech Stack</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link fs-5" href="#projects">Projects</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link fs-5" href="#contacts">Contacts</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <section id="about">
+                    <div class="container">
+                        <div class="row">
+                            <!-- //Text Part // -->
+                            <div class="col-lg-5 col-md-5 col-sm-12">
+                                <h2 class="text-left mt-5 creation"><strong>CREATION.</strong></h2>
+                                <div class="intro" style="color: black; font-weight: 400;">
+                                    I'm <span style="color: rgb(25, 128, 244); font-weight: 400;">Mark Jayson Agao,</span> a scholar
+                                    and a technology student
+                                </div>
+                                <p class="fs-6 mt-3">I am still not yet sure on what tech field I want to settle on, but base on my
+                                    current endeavors, it seems that I am interested in:</p>
+                                <div class="interests d-flex ">
+                                    <span class="badge rounded-pill text-bg-primary m-1">Data</span>
+                                    <span class="badge rounded-pill text-bg-primary m-1">Algorithms</span>
+                                    <span class="badge rounded-pill text-bg-primary m-1">Design</span>
+                                </div>
+                                <p class="fs-6 mt-3">
+                                    Want to know more about me?
+
+                                </p>
+                            </div>
+                            <!-- picture part -->
+                            <div class="col-lg-5 col-md-7 col-sm-10" style="overflow-y: hidden; max-height: 600px; ">
+                                <img src="Activitiy 3-Portfolio/jaysSidePic.png" alt="Profile Picture" class="img-fluid rounded">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="tech" class="bg-dark">
+                    <div class="container">
+                        <div class="d-flex justify-content-center heading-text"> Tech Stack</div>
+                        <p class=" fs-6 mt-5 px-4 sub text-light"> My tech stack is mainly composed of my skills in web development and data analytics experiences in school. I am proficient in web development using vanila HTML, CSS, and JavaScript. I am also experienced in using Python as my main programming languange in doing data analysis and machine learning. Lastly, I have 5 years experience in using Adobe Illustrator as my main tool in graphics design.
+                    </div>
+                    </p>
+                    <div class="row p-5">
+                        <div class="col-lg-2 col-md-3 col-4">
+                            <img src="Activitiy 3-Portfolio/python-logo.png" class="techstack" alt="Python Logo">
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-4">
+                            <img src="Activitiy 3-Portfolio/LlamaIndex.png" class="techstack" alt="Llama Index">
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-4">
+                            <img src="Activitiy 3-Portfolio/C++.png" class="techstack" alt="C++ Logo">
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-4">
+                            <img src="Activitiy 3-Portfolio/HTML.png" class="techstack" alt="HTML Logo">
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-4">
+                            <img src="Activitiy 3-Portfolio/CSS.png" class="techstack" alt="CSS Logo">
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-4">
+                            <img src="Activitiy 3-Portfolio/javascript-logo.png" class="techstack" alt="JavaScript Logo">
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-4">
+                            <img src="Activitiy 3-Portfolio/Git.png" class="techstack" alt="Git Logo">
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-4">
+                            <img src="Activitiy 3-Portfolio/PowerBi.png" class="techstack" alt="Power BI Logo">
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-4">
+                            <img src="Activitiy 3-Portfolio/Figma.png" class="techstack" alt="Figma Logo">
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-4">
+                            <img src="Activitiy 3-Portfolio/Adobe Illustrator.png " class="icon" alt="Adobe Illustrator Logo">
+                        </div>
+
+                    </div>
+                    </div>
+                </section>
+                <section id="projects">
+                    <div class="container-fluid px-5">
+                        <!-- TEXT HERE -->
+                        <div class="container-fluid d-flex justify-content-center bg-primary heading-text" id = "project"> Projects</div>
+                        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                                    aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                                    aria-label="Slide 4"></button>
+                                    
+                            </div>
+                            <div class="carousel-inner">
+
+                                <div class="carousel-item active">
+                                    <a href="https://simplebooklet.com/diwata">
+                                        <div class="img-container">
+                                            <img src="Activity 1 - Brochure/DiwataThumbnail.jpg" class="proj" alt="Diwata 1 Brochure">
+                                        </div>
+                                        <div class="carousel-caption">
+                                            <h5>Diwata 1 Brochure</h5>
+                                            <p>This is an informative brochure about the detials, specification, and
+                                                story of the Philippines first satellite, the Diwata 1.</p>
+                                        </div>
+                                    </a>
+                                </div>
+
+
+                                <div class="carousel-item">
+                                    <a href="Activity 2 - Places/index.html">
+                                        <div class="img-container">
+                                            <img src="Activity 2 - Places/SS_SwitzerlandWeb.jpeg" class="proj" alt="Discover Switzerland">
+                                        </div>
+                                        <div class="carousel-caption ">
+                                            <h5>Discover Switzerland</h5>
+                                            <p>This is a website features the great country of Switzerland and the
+                                                beautiful destinations there</p>
+                                        </div>
+                                    </a>
+                                </div>
+
+
+
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+                <section id="contacts">
+                    <div class="container-fluid bg-dark ">
+                        <div class="row px-6">
+                            
+                            <div class="col-lg-9 col-sm-12 p-5">
+                                <div class = "display-6 d-flex justify-content-center contact" >Contact Me </div> 
+                                <a href="https://web.facebook.com/mjathegreatest/">
+                                    <div class = "fs-6 pt-3 d-flex justify-content-center">
+                                        <img src="Activitiy 3-Portfolio/Facebook-Logo.png" class="contact-logo" alt="Facebook Logo">
+                                        fb.com/mjathegreatest
+                                    </div>
+                                    <a href="https://www.linkedin.com/in/mark-jayson-agao/">
+                                        <div class = "fs-6 pt-3 d-flex justify-content-center">
+                                            <img src="Activitiy 3-Portfolio/logo-linkedin.png" class="contact-logo" alt="LinkedIn Logo">
+                                            linkedin.com/mark-jayson-agao
+                                        </div>
+                                    </a>
+                                    
+                                    <a href="markjaysonagao10@gmail.com">
+                                        <div class = "fs-6 pt-3 d-flex justify-content-center">
+                                            <img src="Activitiy 3-Portfolio/Gmail-Logo.png" class="contact-logo" alt="Gmail Logo">
+                                            markjaysonagao10@gmail.com
+                                        </div>
+                                    </a>
+                            </div>
+                            <div class="col-lg-3 col-sm-12 bg-light p-5"><div class="creation" style="font-size: 40px;"> <strong>CREATION. </strong></div>mark jayson agao portfolio</div>
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+
+                <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+            </body>
+
+            </html>
