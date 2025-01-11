@@ -1,0 +1,246 @@
+
+[
+  {
+    "sportsname": "Football",
+    "venue": "Stadium", 
+    "day": "Tuesday",
+    "color": "#FFB114", 
+    "logo": "Assets/Football.png",
+    "picture": "Assets/football_image.jpg",
+    "description": "A team sport where two teams of eleven players compete to score goals by getting a ball into the opposing team's net using any part of the body except arms and hands."
+  },
+  {
+    "sportsname": "Cricket",
+    "venue": "Cricket Ground",
+    "day": "Tuesday",
+    "color": "#FFB114", 
+    "logo": "Assets/Cricket.png",
+    "picture": "Assets/cricket_image.jpg",
+    "description": "A bat-and-ball game played between two teams where players score runs, bowl, and field with a unique set of rules and traditions."
+  },
+  {
+    "sportsname": "Fencing",
+    "venue": "Fencing Hall",
+    "day": "Tuesday",
+    "color": "#FFB114", 
+    "logo": "Assets/Fencing.png",
+    "picture": "Assets/fencing_image.jpg",
+    "description": "A combat sport involving sword fighting between two competitors using one of three weapons: foil, épée, or sabre."
+  },
+  {
+    "sportsname": "Breaking",
+    "venue": "Breaking Arena",
+    "day": "Tuesday",
+    "color": "#FFB114", 
+    "logo": "Assets/Breaking.png",
+    "picture": "Assets/breaking_image.jpg",
+    "description": "An athletic style of street dance combining rhythmic movements, acrobatics, and creative footwork performed to hip-hop music."
+  },
+  {
+    "sportsname": "Diving",
+    "venue": "Diving Pool",
+    "day": "Tuesday",
+    "color": "#FFB114", 
+    "logo": "Assets/Diving.png",
+    "picture": "Assets/diving_image.jpg",
+    "description": "An aquatic sport where athletes perform acrobatic movements while jumping from various heights into water."
+  },
+  {
+    "sportsname": "Swimming",
+    "venue": "Swimming Pool",
+    "day": "Tuesday",
+    "color": "#FFB114", 
+    "logo": "Assets/Swimming.png",
+    "picture": "Assets/swimming_image.jpg",
+    "description": "A water sport where athletes compete to swim various distances using different strokes in the fastest time possible."
+  },
+  {
+    "sportsname": "Golf",
+    "venue": "Golf Course",
+    "day": "Wednesday",
+    "color": "#0078D0", 
+    "logo": "Assets/Golf.png",
+    "picture": "Assets/golf_image.jpg",
+    "description": "A precision sport where players use various clubs to hit a small ball into holes on a course in the fewest possible strokes."
+  },
+  {
+    "sportsname": "Tennis",
+    "venue": "Tennis Court",
+    "day": "Wednesday",
+    "color": "#0078D0", 
+    "logo": "Assets/Tennis.png",
+    "picture": "Assets/tennis_image.jpg",
+    "description": "A racket sport where players hit a ball back and forth over a net, scoring points when opponents fail to return the ball."
+  },
+  {
+    "sportsname": "BMX",
+    "venue": "BMX Track",
+    "day": "Wednesday",
+    "color": "#0078D0", 
+    "logo": "Assets/BMX.png",
+    "picture": "Assets/bmx_image.jpg",
+    "description": "A cycling sport performed on BMX bikes over dirt tracks with jumps, berms, and other obstacles."
+  },
+  {
+    "sportsname": "Equestrian",
+    "venue": "Equestrian Center",
+    "day": "Wednesday",
+    "color": "#0078D0", 
+    "logo": "Assets/Equestrian.png",
+    "picture": "Assets/equestrian_image.jpg",
+    "description": "A collection of sporting events involving horseback riding, including dressage, jumping, and eventing."
+  },
+  {
+    "sportsname": "Beach Volleyball",
+    "venue": "Beach Court",
+    "day": "Wednesday",
+    "color": "#0078D0", 
+    "logo": "Assets/Beach Volleyball.png",
+    "picture": "Assets/beach_volleyball_image.jpg",
+    "description": "A variant of volleyball played on sand with two players per team, requiring specific techniques adapted for the beach environment."
+  },
+  {
+    "sportsname": "Archery",
+    "venue": "Archery Range",
+    "day": "Wednesday",
+    "color": "#0078D0", 
+    "logo": "Assets/Archery.png",
+    "picture": "Assets/archery_image.jpg",
+    "description": "A precision sport where athletes use bows to shoot arrows at targets from various distances."
+  },
+  {
+    "sportsname": "Badminton",
+    "venue": "Badminton Court",
+    "day": "Thursday",
+    "color": "#00A651", 
+    "logo": "Assets/Badminton.png",
+    "picture": "Assets/badminton_image.jpg",
+    "description": "A racket sport where players hit a shuttlecock back and forth across a net, requiring quick reflexes and strategic placement."
+  },
+  {
+    "sportsname": "Baseball",
+    "venue": "Baseball Stadium",
+    "day": "Thursday",
+    "color": "#00A651", 
+    "logo": "Assets/Baseball.png",
+    "picture": "Assets/baseball_image.jpg",
+    "description": "A bat-and-ball sport where two teams alternate between batting and fielding, aiming to score runs while preventing the opposition from scoring."
+  },
+  {
+    "sportsname": "Rowing",
+    "venue": "Rowing Course",
+    "day": "Thursday",
+    "color": "#00A651", 
+    "logo": "Assets/Rowing.png",
+    "picture": "Assets/rowing_image.jpg",
+    "description": "A water sport where athletes propel boats using oars, competing in various boat classes over different distances."
+  },
+  {
+    "sportsname": "Rugby",
+    "venue": "Rugby Field",
+    "day": "Thursday",
+    "color": "#00A651", 
+    "logo": "Assets/Rugby.png",
+    "picture": "Assets/rugby_image.jpg",
+    "description": "A full-contact team sport where players carry, pass, and kick the ball to score points while tackling opponents."
+  },
+  {
+    "sportsname": "Shooting",
+    "venue": "Shooting Range",
+    "day": "Thursday",
+    "color": "#00A651", 
+    "logo": "Assets/Shooting.png",
+    "picture": "Assets/shooting_image.jpg",
+    "description": "A precision sport where athletes use various types of firearms to shoot at stationary or moving targets."
+  },
+  {
+    "sportsname": "Polo",
+    "venue": "Polo Field",
+    "day": "Thursday",
+    "color": "#00A651", 
+    "logo": "Assets/Polo.png",
+    "picture": "Assets/polo_image.jpg",
+    "description": "A team sport played on horseback where players use mallets to drive a ball into the opposing team's goal."
+  },
+  {
+    "sportsname": "Basketball",
+    "venue": "Basketball Court",
+    "day": "Friday",
+    "color": "#F0282D", 
+    "logo": "Assets/Basketball.png",
+    "picture": "Assets/basketball_image.jpg",
+    "description": "A team sport where players score points by throwing a ball through the opposing team's elevated hoop while following dribbling rules."
+  },
+  {
+    "sportsname": "Taekwondo",
+    "venue": "Taekwondo Dojo",
+    "day": "Friday",
+    "color": "#F0282D", 
+    "logo": "Assets/Taekwondo.png",
+    "picture": "Assets/taekwondo_image.jpg",
+    "description": "A Korean martial art characterized by high, fast kicking techniques and dynamic striking movements."
+  },
+  {
+    "sportsname": "Volleyball",
+    "venue": "Volleyball Court",
+    "day": "Friday",
+    "color": "#F0282D", 
+    "logo": "Assets/Volleyball.png",
+    "picture": "Assets/volleyball_image.jpg",
+    "description": "A team sport where players hit a ball over a net, with each team allowed three touches to return the ball to the opposing court."
+  },
+  {
+    "sportsname": "Table Tennis",
+    "venue": "Table Tennis Hall",
+    "day": "Friday",
+    "color": "#F0282D", 
+    "logo": "Assets/Table Tennis.png",
+    "picture": "Assets/table_tennis_image.jpg",
+    "description": "A fast-paced racket sport played on a table where players hit a lightweight ball back and forth over a net."
+  },
+  {
+    "sportsname": "Karate",
+    "venue": "Karate Dojo",
+    "day": "Friday",
+    "color": "#F0282D", 
+    "logo": "Assets/Karate.png",
+    "picture": "Assets/karate_image.jpg",
+    "description": "A Japanese martial art focusing on striking techniques such as punching, kicking, knee strikes, and elbow strikes."
+  },
+  {
+    "sportsname": "Wrestling",
+    "venue": "Wrestling Mat",
+    "day": "Saturday",
+    "color": "#FFB114", 
+    "logo": "Assets/Wrestling.png",
+    "picture": "Assets/wrestling_image.jpg",
+    "description": "A combat sport involving grappling techniques such as throws, takedowns, and pins to gain physical advantage over an opponent."
+  },
+  {
+    "sportsname": "Football",
+    "venue": "Stadium", 
+    "day": "Saturday",
+    "color": "#FFB114", 
+    "logo": "Assets/Football.png",
+    "picture": "Assets/football_image.jpg",
+    "description": "A team sport where two teams of eleven players compete to score goals by getting a ball into the opposing team's net using any part of the body except arms and hands."
+  },
+  {
+    "sportsname": "Boxing",
+    "venue": "Boxing Ring",
+    "day": "Saturday",
+    "color": "#FFB114", 
+    "logo": "Assets/Boxing.png",
+    "picture": "Assets/boxing_image.jpg",
+    "description": "A combat sport where two competitors throw punches at each other while wearing protective gloves in a boxing ring."
+  },
+  {
+    "sportsname": "Gymnastics",
+    "venue": "Gymnastics Arena",
+    "day": "Saturday",
+    "color": "#FFB114", 
+    "logo": "Assets/Gymnastics.png",
+    "picture": "Assets/gymnastics_image.jpg",
+    "description": "A sport involving exercises requiring balance, strength, flexibility, agility, coordination, and grace across various apparatus."
+  }
+]

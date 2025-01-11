@@ -1,0 +1,155 @@
+body{
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.left{
+    margin-left: 20px;
+}
+nav img{
+    width: 50px;
+    height: auto;
+    margin-right: 20px;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+.navbar-brand{
+    height: 40px;
+    padding: 10px;
+    padding-left: 40px;
+    font-family: Montserrat;
+    gap: 100px;
+}
+.banner{
+    width: 100%;
+    height: 70vh;
+    background-image: url(Assets/imgParis.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+    text-align: center;
+    color: white;
+}
+.container{
+    background-color: rgba(255, 255, 255, 0.8);
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    border-radius: 20px;
+    width: 50vw;
+    margin-left: 50px;
+    color: black;
+}
+.container h1{
+   color: rgb(0, 94, 255)
+}
+
+.btn{
+    height: 50px;
+    width: 30%;
+    text-align: start;
+}
+
+.sports-card{
+    background-color: rgb(255, 255, 255);
+    height: 15vw;
+    width: 13vw;
+    padding: 8px;
+    margin: 10px;
+    border-radius: 10px;
+    
+    
+}
+.sports-card:hover{
+    background-color: rgb(0, 94, 255);
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    transition: 0.5s;
+}
+.sports-container{
+   
+   height: 300px;
+   margin: auto;
+   background-color: rgba(255, 255, 255, 0);
+}
+
+.sports-card img{
+    width: 100%;
+    height: auto;
+    
+    
+}
+hr{
+     border-top: 2px solid black; /* Adjust line thickness and color as needed */
+      width: 35vw; 
+      margin: 0 10px;
+}
+
+.title-text{
+    display: flex; /* Use flexbox for easy horizontal alignment */
+      align-items: center; /* Center vertically */
+      justify-content: center;
+      
+        margin: 0 20px;
+        margin-top: 20px;
+}
+.title-text, .sports-title{
+font-family: Montserrat;
+        font-size: 20px;
+        margin-left: 10px;
+} 
+
+.pic img{
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+.about{
+    width: 60vw;
+    
+}
+.pic{
+    display: flex;
+    margin-right: -20px;
+    background-color: rgba(198, 139, 50, 0);
+    align-items: center;
+    justify-content: center;
+}
+.details{
+    /* margin-top: 10px; */
+    padding: 20px;
+    background-color: rgba(248, 0, 0, 0);
+    border-radius: 20px;
+    margin-left: 50px;
+    color: rgb(11, 11, 11);
+    /* Adjust the value to decrease or increase the line gap */
+}
+.venue, .date{
+    line-height: 0.9;
+}
+
+.description{
+    margin-top: 10px;
+    line-height: 1.5;
+}
+.sports-banner{
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+    text-align: center;
+    color: white;
+}
+
