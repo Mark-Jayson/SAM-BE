@@ -83,11 +83,11 @@
                     if (index !== -1) {
                         pic.src = `Assets/${category}.png`;
                         pic.alt = category;
-                        banner.style.backgroundImage = `url('Assets/${category}.jpg')`;
+                        banner.style.backgroundImage = `url('Assets/imgLyles.jpg')`;
                         name.innerHTML = `<h1 class="name">${category}</h1>
                                         <p class="venue">${data[index].venue}</p>
                                         <p class="date">${data[index].day}</p>`;
-                        description.innerHTML = `<p class="description" style="background-color: ${data[index].color}">${data[index].description}</p>`;
+                        description.innerHTML = `<p class="description" style="border: 1px solid; border-radius: 10px; border-color: ${data[index].color}">${data[index].description}</p>`;
                     } else {
                         console.error('Category not found in data');
                     }
