@@ -23,6 +23,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
         </nav>
+
         <div class="banner">
             <div class="container p-5 rounded">
                 <div class="row">
@@ -161,6 +162,7 @@
                 <img src="${sport.logo}" class="sports-img" alt="${sport.sportsname}">
                 <h3 class="sports-title">${sport.sportsname}</h3>
             </div>
+            </a>
         </div>
       `;
     });
@@ -170,6 +172,25 @@
   .catch(error => {
     console.error('Error fetching sports data:', error);
   });
+
+  const backgroundImages = [
+            'Assets/imgArtistics.jpg',
+            'Assets/imgBridge.jpg',
+            'Assets/imgCycling.jpg',
+            'Assets/imgEiffelCycle.jpg'
+        ];
+
+        let currentImageIndex = 0;
+        const loginBg = document.getElementsByClassName('banner')[0];
+
+        function changeBackground() {
+            loginBg.style.backgroundImage = `url('${backgroundImages[currentImageIndex]}')`;
+            currentImageIndex = (currentImageIndex + 1) % backgroundImages.length;
+        }
+
+        // Set initial background and start rotation
+        changeBackground();
+        setInterval(changeBackground, 5000);
 
         
         

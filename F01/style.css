@@ -164,3 +164,78 @@ font-family: Montserrat;
     transition: background-image 1s ease-in-out;
 }
 
+/* Added styles from JuanGPT */
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;  /* Changed from 70vh to auto for better form display */
+    width: 80vw;   /* Increased from 70vw for better mobile view */
+    padding: 10px;
+    background-color: #0066CC;
+    color: white;
+}
+
+.form-floating {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.form-floating > .form-control {
+    height: calc(3.5rem + 2px); /* Ensure consistent height for inputs */
+    padding: 1rem 0.75rem;
+    font-size: 1rem;
+}
+
+.form-floating > label {
+    padding: 1rem 0.75rem;
+    color: #495057;
+    background-color: transparent;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    pointer-events: none;
+    border: 1px solid transparent;
+    transform-origin: 0 0;
+    transition: opacity .1s ease-in-out,transform .1s ease-in-out;
+}
+
+/* Fix label positioning on focus/filled state for mobile */
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label {
+    opacity: 1;
+    transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
+    background-color: rgba(255, 255, 255, 0);
+    padding: 0 0.25rem;
+    color: #000000;
+}
+
+/* Ensure form controls have proper background */
+.form-control {
+    background-color: rgba(255, 255, 255, 0) !important;
+    margin-top: 0;  /* Remove extra margin that might cause spacing issues */
+    height: auto;   /* Let the content determine the height */
+}
+
+/* Ensure submit button is properly visible */
+.submit {
+    margin-top: 1rem;
+    padding: 0.5rem 2rem;
+    width: auto;
+}
+#bluelogo{
+    display: block;
+    width: 120px;
+    height: auto;
+    margin: 10px;
+}
+.chat-container {
+    padding: 10px;
+}
+
+.user-input {
+    margin: 0 10px;
+}
