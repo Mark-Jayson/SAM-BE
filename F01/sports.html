@@ -13,6 +13,11 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/e744a83066.js" crossorigin="anonymous"></script>
     <style>
+        #add{
+            width: 8vw;
+            text-align: center;
+            height: 60px;
+        }
     </style>
 </head>
 
@@ -30,15 +35,15 @@
     </div>
     <div class="about mx-auto">
         <div class="row p-5">
-            <div class="col-4 pic">
+            <div class="col-lg-4 col-sm-12 pic">
                 <img src="Assets/Basketball.png" class="pic " alt="Basketball">
             </div>
-            <div class="col-3 details mx-3">
+            <div class="col-lg-3  col-sm-12 details mx-3">
                 <h1 class="name">Basketball</h1>
                 <p class="venue">venue</p>
                 <p class="date">date</p>
             </div>
-            <div class="col-4 mx-3 description">
+            <div class="col-lg-4  col-sm-12 mx-3 description">
                 <p class="description">description</p>
             </div>
         </div>
@@ -86,7 +91,8 @@
                         banner.style.backgroundImage = `url('Assets/imgLyles.jpg')`;
                         name.innerHTML = `<h1 class="name">${category}</h1>
                                         <p class="venue">${data[index].venue}</p>
-                                        <p class="date">${data[index].day}</p>`;
+                                        <p class="date">${data[index].day}</p>
+                                        <button type="submit" class="btn btn-primary" id="add">Add to Itinerary</button>`;
                         description.innerHTML = `<p class="description" style="border: 1px solid; border-radius: 10px; border-color: ${data[index].color}">${data[index].description}</p>`;
                     } else {
                         console.error('Category not found in data');

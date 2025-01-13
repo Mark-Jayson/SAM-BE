@@ -1,5 +1,5 @@
 body{
-    background-color: #f0f0f0;
+    background-color: #ffffff;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -15,10 +15,26 @@ nav img{
 
 nav ul{
     list-style-type: none;
-    margin: 0;
     padding: 0;
+    align-self: flex-end;
     overflow: hidden;
-    background-color: #333;
+    background-color: #ffffff;
+    margin-right: 30px;
+}
+
+a{
+    text-decoration: none;
+    color:#000000;
+}
+
+.nav-item{
+    color:#000000;
+    margin-right: 10px;
+    background-color:#ffffff;
+    font-family: Montserrat;
+    margin-top: 10px;
+
+
 }
 .navbar-brand{
     height: 40px;
@@ -27,6 +43,40 @@ nav ul{
     font-family: Montserrat;
     gap: 100px;
 }
+
+#navbarNav {
+    justify-content: flex-end !important;
+}
+
+/* Style for collapsed navbar */
+@media (max-width: 575.98px) {
+    .navbar-collapse {
+        background-color: white;
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .nav-item {
+        width: 30vw;
+    }
+
+    .navbar-nav .nav-link {
+        color: black !important;
+        padding: 0.5rem 1rem;
+    }
+
+    /* Add hover effect for better interaction */
+    .navbar-nav .nav-link:hover {
+        background-color: #f8f9fa;
+    }
+}
+
+/* Optional: Add transition for smooth collapse animation */
+.navbar-collapse {
+    transition: all 0.3s ease;
+}
+
 .banner{
     width: 100%;
     height: 70vh;
