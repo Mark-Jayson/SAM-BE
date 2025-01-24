@@ -13,7 +13,7 @@
     <script src="https://kit.fontawesome.com/e744a83066.js" crossorigin="anonymous"></script>
     <style>
 
-
+        
         body {
             margin: 0;
             padding: 0;
@@ -258,33 +258,6 @@
 
             }
         }
-
-        function check() {
-            const urlParameters = new URLSearchParams(window.location.search);
-            if (urlParameters.has("type")) {
-                load(urlParameters.get("type"));
-            } else {
-                title.innerHTML = "NO DATA";
-            }
-        }
-        const load = (type) => {
-            const loginForm = document.getElementById('loginForm');
-            const signupForm = document.getElementById('signupForm');
-            const content = document.getElementById('content');
-
-            if(type == "login"){
-                document.getElementById('loginForm').style.display = 'block';
-                document.getElementById('signupForm').style.display = 'none';
-            }
-            if(type == "signup"){
-                loginForm.style.display = 'none';
-                signupForm.style.display = 'block';
-                content.style.display= 'none';
-            }
-
-        }
-        check();
-        
     </script>
 </body>
 </html>
