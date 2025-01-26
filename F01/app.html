@@ -13,31 +13,11 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/e744a83066.js" crossorigin="anonymous"></script>
     <style>
-        .itinerary {
-            background-color: #cd9e47;
-            border-radius: 10px;
-            width: 80vw;
-            
-            
-            
-        }
-        .sched {
-            background-color: #0080ff;
-            border-radius: 30px;
-            margin: 10px;
-            height: 70px;
-            justify-content: center;
-            font-size: 15px;
-            display: flex;
-            vertical-align: middle;
-            width: 70px;
-            margin: auto4444444444;
-        }
         .itinerary-banner {
-            background-image: url("Assets/itinerary.jpg");
+            
             background-size: cover;
             background-position: center;
-            height: 100vh;
+
             display: flex;
             align-items: center;
             justify-content: center;
@@ -45,39 +25,523 @@
             font-size: 2rem;
             font-weight: 700;
             text-align: center;
-            
         }
+        #back{
+            width: auto;
+            text-align: center;
+            padding: 10px;
+            height: 50px;
+            margin: 20px;
+        }
+
+        .itinerary {
+            display: flex;
+            background-color: none;
+            border-radius: 10px;
+            width: 80vw;
+            align-items: center;
+            margin: 0 auto;
+            /* Centered horizontally */
+        }
+
+        .day-container h2 {
+            background-color: #dcdcdc;
+            border-radius: 30px;
+            margin: 10px;
+            height: 70px;
+            justify-content: center;
+            font-size: 15px;
+            display: flex;
+            vertical-align: middle;
+            align-items: center;
+            width: 80px;
+            margin: auto;
+            margin-bottom: 30px;
+    font-size: 20px;
+    color: black;
+    font-family: Montserrat;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            margin: auto;
+        }
+
+        .day-container {
+            align-items: center;
+            padding: 10px;
+            width: 150px;
+            margin: 3vw;
+        }
+
+        .add{
+            width: 100px;
+            align-items: center;
+             
+        }
+
+        .display-3 {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 50px;
+            font-family: Montserrat;
+        }
+
+        
+
+        .event {
+            border: 1px solid #ccc;
+            padding: 5px;
+            margin: 5px;
+            width: 100px;
+            height: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            /* Make it a column for better vertical alignment */
+        }
+
+        .event img {
+            margin: 20px;
+            margin-bottom: 1px;
+            max-width: 90px;
+            max-height: 90px;
+        }
+
+        .sports-title {
+            text-align: center;
+        }
+
+
+
+
+
+
+        @media (max-width: 675.98px) {
+            .col-1 {
+                display: none;
+            }
+        }
+
+
+
+        .schedule-container {
+            position: fixed;
+            z-index: 1000;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            display: none;
+            min-width: 200px;
+            max-width: 300px;
+            animation: float-in 0.2s ease-out;
+        }
+
+        @keyframes float-in {
+            from {
+                opacity: 0;
+                transform: translate(0, 10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translate(0, 0);
+            }
+        }
+
+        .schedule-container h2 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+            color: #333;
+            font-size: 20px;
+        }
+
+        .schedule-item {
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .schedule-item:hover {
+            background-color: #f0f0f0;
+        }
+
+        .schedule-item p {
+            margin: 5px 0;
+            line-height: 1.4;
+            font-size: 12px;
+
+        }
+
+        .schedule-item p:first-child {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .schedule-item p:last-child {
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }  
+
+        .sports-banner {
+            background-image: url('Assets/imgBridge.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 10vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2rem;
+            font-weight: 700;
+            text-align: center;
+        }
+        @media (max-width: 675.98px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    
+
+    .day-container {
+        width: 80vw;
+        margin: 10px 0;
+    }
+.day-container h2{
+    font-size: 22px;
+    color: black;
+    font-family: Montserrat;
+}
+    .day-container .event {
+        display: inline-block;
+        margin: 5px;
+        vertical-align: top;
+    }
+
+    
+        .add{
+            display: block;
+            width: 100px;
+            align-items: center;
+            margin: auto;
+             
+        }
+    
+}
     </style>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-sm navbar-light shadow">
-        <a class="navbar-brand gap-2"> <img src="Assets/OlympicLogoColor.png" class="techstack" alt="Logo"> Olympic
+        <a class="navbar-brand gap-2"> <img src="Assets/OlympicLogoColor.png" href="index.html" class="techstack"
+                alt="Logo"> Olympic
             Itenerary Maker</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+        
     </nav>
+    <button class="btn btn-primary" id="back" onclick="window.location.href = 'index.html'">Back</button>
+    <div class="sports-banner">
+
+    </div>
 
 
-    
-    <div class="itinerary-banner d-flex align-items-center">
-        <div class="row p-5 itinerary mx-auto">
-            <div class="col-1"></div>
-            <div class="col-2 sched d-flex align-items-center"> Tues </div>
-            <div class="col-2 sched d-flex align-items-center">Wed</div>
-            <div class="col-2 sched d-flex align-items-center">Thurs</div>
-            <div class="col-2 sched d-flex align-items-center">Fri</div>
-            <div class="col-2 sched d-flex align-items-center">Sat</div>
-            <div class="col-1 "></div>
+    <div class="schedule-container" id="schedule-container">
+        <h2>Tuesday</h2>
+        <div class="schedule-item">
+            <p>Volleyball 6AM - 7PM</p>
+            <p>Venue: Stadium</p>
+        </div>
+        <div class="schedule-item">
+            <p>Volleyball 6AM - 7PM</p>
+            <p>Venue: Stadium</p>
+        </div>
+        <div class="schedule-item">
+            <p>Volleyball 6AM - 7PM</p>
+            <p>Venue: Stadium</p>
         </div>
     </div>
+<div class="container-fluid" id="ss">
+    <div class="display-3"></div>
+
+    <div class="itinerary-banner d-flex align-items-center justify-content-center" id="itinerary-banner">
+        <div class="row p-5 itinerary">
+            <div class="container" id = "container">
+                <div class="day-container" id="Tuesday">
+                    <h2>Tue</h2>
+                    
+                    <button class="btn btn-primary add"  onclick="showContainer('Tuesday')">Add Event</button>
+                </div>
+                <div class="day-container" id="Wednesday">
+                    <h2>Wed</h2>
+                    
+                    <button class="btn btn-primary add" onclick="showContainer('Wednesday')">Add Event</button>
+                </div>
+                <div class="day-container" id="Thursday">
+                    <h2>Thur</h2>
+                    <button class="btn btn-primary add"  onclick="showContainer('Thursday')">Add Event</button>
+                </div>
+                <div class="day-container" id="Friday">
+                    <h2>Fri</h2>
+                    <button class="btn btn-primary add"  onclick="showContainer('Friday')">Add Event</button>
+                </div>
+                <div class="day-container" id="Saturday">
+                    <h2>Sat</h2>
+                    <button class="btn btn-primary add"  onclick="showContainer('Saturday')">Add Event</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+    
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script>
+
+function getCurrentUser() {
+    // Log all localStorage contents for debugging
+    console.log('All localStorage:', {
+        users: localStorage.getItem('users'),
+        currentUserEmail: localStorage.getItem('currentUserEmail')
+    });
+
+    // Ensure users data exists and is valid
+    const usersData = JSON.parse(localStorage.getItem('users') || '{"users": []}');
+    const currentUserEmail = localStorage.getItem('currentUserEmail');
+
+    console.log('Parsed usersData:', usersData);
+    console.log('Current User Email:', currentUserEmail);
+
+    const currentUser = usersData.users.find(user => user.email === currentUserEmail);
     
-     
+    return currentUser;
+}
+
+const currentUser = getCurrentUser();
+console.log('Current User:', currentUser);
+const banner = document.querySelector('.display-3');
+if (currentUser) {
+    banner.textContent = `${currentUser.name}'s Olympic Itinerary`;
+} else {
+    console.error('No current user found');
+}
+
+// function print() {
+//     html2pdf()
+//     .from(document.body)
+//     .set({ 
+//         margin: , 
+//         html2canvas: { 
+//             scale: 1,
+//             useCORS: true,
+//             logging: false,
+//             height: document.body.scrollHeight,
+//             y: -1*(document.body.scrollHeight/50), // Start capture from top of page
+//             windowHeight: document.body.scrollHeight  // Capture full document height
+//         },
+//         filename: 'Full_Screen_Capture.pdf', 
+//         image: { type: 'jpeg', quality: 1 },
+//         jsPDF: { 
+//             unit: 'px', 
+//             format: [1800, 1000],
+//             orientation: 'landscape' 
+//         }
+//     })
+//     .save();
+//     console.log(document.body.scrollHeight);
+// }
+
+        const myArray = [
+  [],
+  [],
+  [],
+  [],
+  []
+
+];
+
+const weekdays = {
+  Tuesday: 0,
+  Wednesday: 1,
+  Thursday: 2, 
+    Friday: 3, 
+    Saturday: 4
+  
+};
+
+
+        // Example: Dynamically add events based on data
+        function addEvent(sportname, day) {
+            // Read the sports data directly from the JSON
+            fetch('sports.json')
+                .then(response => response.json())
+                .then(data => {
+                    console.log(day, sportname);
+
+                    if ( myArray[1].includes(sportname) || myArray[0].includes(sportname) || myArray[2].includes(sportname) || myArray[3].includes(sportname) || myArray[4].includes(sportname)) {
+                        console.log(myArray);
+                        return;
+                    } 
+                    else {
+                        myArray[weekdays[day]].push(sportname);
+                        console.log(myArray);
+                    } 
+
+                    // Find the first sport that matches BOTH day and sportname
+                    // Use case-sensitive matching to ensure exact match
+                    const sport = data.find(sport =>
+                        sport.day === day && sport.sportsname === sportname
+                    );
+
+                    if (sport) {
+                        // Find the day container
+                        const dayContainer = document.getElementById(day);
+
+                        if (dayContainer) {
+                            // Create event div
+                            const eventDiv = document.createElement("div");
+                            eventDiv.classList.add("event");
+
+                            // Create image
+                            const img = document.createElement("img");
+                            img.src = sport.logo;
+                            img.alt = sportname;
+
+                            // Create sport title
+                            const sportTitle = document.createElement("h3");
+                            sportTitle.classList.add("sports-title");
+                            sportTitle.textContent = sportname;
+
+                            // Assemble the event div
+                            eventDiv.appendChild(img);
+                            eventDiv.appendChild(sportTitle);
+
+                            // Add to day container
+                            dayContainer.appendChild(eventDiv);
+                        } else {
+                            console.error(`No container found for day: ${day}`);
+                        }
+                    } else {
+                        // Log all available sports for debugging
+                        console.error(`No sport found with name: ${sportname} on ${day}`);
+                        console.log('Available sports:', data.map(sport => `${sport.sportsname} on ${sport.day}`));
+                    }
+                })
+                .catch(error => {
+                    console.error('Error adding event:', error);
+                });
+        }
+
+        
+        function showContainer(day, event) {
+            const container = document.getElementById("schedule-container");
+
+
+            // Position the container near the cursor
+            if (event) {
+                const x = event.clientX;
+                const y = event.clientY;
+ 
+                container.style.position = 'fixed';
+                container.style.left = `${x + 10}px`; // Slight offset from cursor
+                container.style.top = `${y + 10}px`;
+            }
+
+            // Ensure the container is displayed
+            container.style.display = "block";
+
+            // Update the day in the container header
+            container.querySelector('h2').textContent = day;
+
+            // Fetch the sports data
+            fetch('sports.json')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    // Filter sports for the specific day
+                    const daySports = data.filter(sport =>
+                        sport.day.toLowerCase() === day.toLowerCase()
+                    );
+
+                    // Clear previous schedule items
+                    const scheduleContent = container.querySelector('h2');
+                    container.innerHTML = '';
+                    container.appendChild(scheduleContent);
+
+                    const id = "append";
+
+                    // Add new schedule items
+                    daySports.forEach(sport => {
+                        
+                        const scheduleItem = document.createElement('div');
+                        scheduleItem.classList.add('schedule-item');
+                    //     if (sportsname in myArray) {
+                    //     id = "disabled";
+                    // }
+
+                        scheduleItem.innerHTML = `
+                <button type="submit" class="${id}" onclick = "addEvent('${sport.sportsname}', '${day}')">
+                    <p>${sport.sportsname}</p>
+                    <p>Venue: ${sport.venue}</p>
+                </button>
+                `;
+                        container.appendChild(scheduleItem);
+                    });
+                })
+                .catch(error => {
+                    console.error('Error fetching sports data:', error);
+                });
+
+            // Add click outside listener to close container
+            function closeContainerOnOutsideClick(e) {
+                if (!container.contains(e.target)) {
+                    container.style.display = 'none';
+                    document.removeEventListener('click', closeContainerOnOutsideClick);
+                }
+            }
+
+            // Delay adding the listener to prevent immediate closure
+            setTimeout(() => {
+                document.addEventListener('click', closeContainerOnOutsideClick);
+            }, 0);
+        }
+
+        // Modify the button onclick to call showContainer correctly
+        document.querySelectorAll('.btn-primary').forEach(button => {
+            if (button.classList.contains('add')) {
+                button.onclick = function (event) {
+                    const day = this.closest('.day-container').id;
+                    showContainer(day, event);
+                };
+            }
+            
+        });
+
+      
+
+
+
+
+
+    </script>
 </body>
 
 </html>

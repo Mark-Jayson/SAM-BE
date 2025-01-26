@@ -13,11 +13,12 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/e744a83066.js" crossorigin="anonymous"></script>
     <style>
-        #add{
+        #back{
             width: auto;
             text-align: center;
             padding: 10px;
             height: 50px;
+            margin: 20px;
         }
         .about{
             margin: auto;
@@ -28,6 +29,10 @@
                 margin-left: 20px;
 
             }
+            .sports-title{
+        font-size: 15px;
+        margin: auto;
+    }
         }
     </style>
 </head>
@@ -36,11 +41,9 @@
     <nav class="navbar navbar-expand-sm navbar-light shadow">
         <a class="navbar-brand gap-2"> <img src="Assets/OlympicLogoColor.png" class="techstack" alt="Logo"> Olympic
             Itenerary Maker</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+        
     </nav>
+    <button class="btn btn-primary" id="back" onclick="window.location.href = 'index.html'">Back</button>
     <div class="sports-banner">
 
     </div>
@@ -59,10 +62,17 @@
             </div>
         </div>
     </div>
+
+    <div class="sports row p-5" id="sp">
+
+                
+                
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <script>
+    <script type = "module">
         
         function check() {
             const urlParameters = new URLSearchParams(window.location.search);
@@ -72,6 +82,8 @@
                 title.innerHTML = "NO DATA";
             }
         }
+        
+        
         const load = (category) => {
             fetch('sports.json')
                 .then(response => {
@@ -99,11 +111,11 @@
                     if (index !== -1) {
                         pic.src = `Assets/${category}.png`;
                         pic.alt = category;
-                        banner.style.backgroundImage = `url('Assets/imgLyles.jpg')`;
+                        banner.style.backgroundImage = `url('Assets/imgCycling.jpg')`;
                         name.innerHTML = `<h1 class="name">${category}</h1>
-                                        <p class="venue">${data[index].venue}</p>
+                                         <p class="venue">${data[index].venue}</p>
                                         <p class="date">${data[index].day}</p>
-                                        <button type="submit" class="btn btn-primary" id="add">Add to Itinerary</button>`;
+                                        `;
                         description.innerHTML = `<p class="description" style="border: 1px solid; border-radius: 10px; border-color: ${data[index].color}">${data[index].description}</p>`;
                     } else {
                         console.error('Category not found in data');
@@ -113,6 +125,47 @@
                     console.error('There has been a problem with your fetch operation:', error);
                 });
         }
+
+        const sportsCard = document.querySelectorAll('.sports-card');
+        sportsCard.forEach(card => {
+            card.addEventListener('click', () => {
+                window.location.href = 'sports.html';
+            });
+        });
+
+
+        const sportsImg = document.getElementsByClassName('sports-img');
+        const sportsTitle = document.getElementsByClassName('sports-title');
+        const sports = document.getElementsByClassName('sports');
+        
+        
+        fetch('sports.json')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    return response.json();
+  })
+  .then(data => {
+    const sp = document.getElementById('sp');
+    sp.innerHTML = '';
+    var i = '';
+
+    data.forEach(sport => {
+      i += `
+        <div class="col-lg-2 col-md-3 col-sm-3 col-3">
+            <a href="sports.html?category=${sport.sportsname}" class="category-link">
+            <div class="sports-card">
+                <img src="${sport.logo}" class="sports-img" alt="${sport.sportsname}">
+                <h3 class="sports-title">${sport.sportsname}</h3>
+            </div>
+            </a>
+        </div>
+      `;
+    });
+    
+    sp.innerHTML = i; // Changed from += to = since we already cleared the innerHTML
+  })
         check();
     </script>
 </body>
